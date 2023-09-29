@@ -1,0 +1,12 @@
+/*------------Basic styles-------------*/
+@import "base/_reset.scss";
+@import "base/_global.scss";
+
+/*------------Pages-------------*/
+@import "pages/_index.scss";
+
+/*------------Components-------------*/
+@import "components/_header.scss";
+
+/*------------Media-----------------*/
+@import "media/_media.scss";
