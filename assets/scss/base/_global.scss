@@ -9,10 +9,17 @@ body {
   overflow: hidden;
 }
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
 }
+
 .main {
   flex: 1 1 auto;
 }
+
 .footer {
 }
 
@@ -20,4 +27,17 @@ body {
   max-width: 1075px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+._ibg {
+  position: relative;
+
+  & img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
