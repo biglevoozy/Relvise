@@ -25,6 +25,14 @@
     }
   }
 }
+.statistics {
+  &__items {
+    display: grid;
+    justify-content: center;
+    gap: 40px;
+    grid-template-columns: repeat(2, 230px);
+  }
+}
 /*============================*/
 
 /*MOBILE*/
@@ -34,8 +42,9 @@
       margin-right: 70px;
     }
   }
+
   .hero {
-    padding: 130px 0 150px 0;
+    padding: 130px 0px 150px 0px;
 
     &__info {
       text-align: center;
@@ -52,12 +61,27 @@
       font-size: 18px;
     }
   }
+
   .services {
-    &__items{
-      margin-top: -0px;
+    &__items {
+      margin-top: -80px;
     }
     &__item {
       width: 100%;
+    }
+  }
+
+  .statistics {
+    &__items {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+
+  .item-statistics {
+    &__number {
+      margin: 5px 0px;
     }
   }
 }
@@ -65,6 +89,12 @@
 
 /*MOBILE SMALL*/
 @media (max-width: 479.98px) {
+  .title {
+    font-size: 32px;
+  }
+  .subtitle {
+    font-size: 12px;
+  }
   .header {
     &__logo {
       position: relative;
